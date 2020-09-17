@@ -27,6 +27,7 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: build
+          toolchain: nightly
           args: --release
       - name: Docker Build and Push
         uses: VaultVulp/gp-docker-action@1.1.7
