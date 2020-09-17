@@ -13,9 +13,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf95c74f-6a77-4854-a1ee-61a440427dee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
-    </list>
+    <list default="true" id="bf95c74f-6a77-4854-a1ee-61a440427dee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +115,7 @@
       <updated>1600283915960</updated>
       <workItem from="1600283917153" duration="469000" />
       <workItem from="1600284412133" duration="13576000" />
-      <workItem from="1600355030784" duration="747000" />
+      <workItem from="1600355030784" duration="1349000" />
     </task>
     <servers />
   </component>

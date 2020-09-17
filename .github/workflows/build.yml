@@ -35,3 +35,4 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           image-name: default-backend-rs
           image-tag: head
+          build-context: "--build-arg app_env=release ."
