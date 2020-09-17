@@ -39,12 +39,17 @@ fn get_error(file: String, headers: AllHeaders) -> Custom<Template> {
     variables.insert("request_id", context.get(String::from("X-Request-ID")));
 
     let status_code: u16;
+    let t: Template;
     match variables.get("status_code") {
-        Some(e) => status_code = e.unwrap_or(&String::from("500")).parse().unwrap_or(500),
-        None => status_code = 500,
+        Some(e) => {
+            status_code = e.unwrap_or(&String::from("500")).parse().unwrap_or(500);
+            t = Template::render(e.unwrap_or(&String::from("dbrs-error")), &variables);
+        }
+        None => {
+            t = Template::render("dbrs-error", &variables);
+            status_code = 500;
+        }
     }
-
-    let t = Template::render("default", &variables);
     let s = Status::new(status_code, "reason");
     status::Custom(s, t)
 }
