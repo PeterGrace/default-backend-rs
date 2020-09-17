@@ -13,7 +13,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf95c74f-6a77-4854-a1ee-61a440427dee" name="Default Changelist" comment="" />
+    <list default="true" id="bf95c74f-6a77-4854-a1ee-61a440427dee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +61,7 @@
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="language.rust.rustfmt" />
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Cargo Command.Run">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run" />
@@ -115,7 +118,7 @@
       <updated>1600283915960</updated>
       <workItem from="1600283917153" duration="469000" />
       <workItem from="1600284412133" duration="13576000" />
-      <workItem from="1600355030784" duration="1349000" />
+      <workItem from="1600355030784" duration="2351000" />
     </task>
     <servers />
   </component>
@@ -146,22 +149,22 @@
       <screen x="0" y="28" width="1920" height="961" />
     </state>
     <state x="743" y="266" width="426" height="482" key="FileChooserDialogImpl/0.28.1920.961@0.28.1920.961" timestamp="1600284131969" />
-    <state width="1872" height="248" key="GridCell.Tab.0.bottom" timestamp="1600351302108">
+    <state width="1872" height="248" key="GridCell.Tab.0.bottom" timestamp="1600363787370">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
-    <state width="1872" height="248" key="GridCell.Tab.0.bottom/0.28.1920.961@0.28.1920.961" timestamp="1600351302108" />
-    <state width="1872" height="248" key="GridCell.Tab.0.center" timestamp="1600351302107">
+    <state width="1872" height="248" key="GridCell.Tab.0.bottom/0.28.1920.961@0.28.1920.961" timestamp="1600363787370" />
+    <state width="1872" height="248" key="GridCell.Tab.0.center" timestamp="1600363787369">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
-    <state width="1872" height="248" key="GridCell.Tab.0.center/0.28.1920.961@0.28.1920.961" timestamp="1600351302107" />
-    <state width="1872" height="248" key="GridCell.Tab.0.left" timestamp="1600351302107">
+    <state width="1872" height="248" key="GridCell.Tab.0.center/0.28.1920.961@0.28.1920.961" timestamp="1600363787369" />
+    <state width="1872" height="248" key="GridCell.Tab.0.left" timestamp="1600363787368">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
-    <state width="1872" height="248" key="GridCell.Tab.0.left/0.28.1920.961@0.28.1920.961" timestamp="1600351302107" />
-    <state width="1872" height="248" key="GridCell.Tab.0.right" timestamp="1600351302108">
+    <state width="1872" height="248" key="GridCell.Tab.0.left/0.28.1920.961@0.28.1920.961" timestamp="1600363787368" />
+    <state width="1872" height="248" key="GridCell.Tab.0.right" timestamp="1600363787370">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
-    <state width="1872" height="248" key="GridCell.Tab.0.right/0.28.1920.961@0.28.1920.961" timestamp="1600351302108" />
+    <state width="1872" height="248" key="GridCell.Tab.0.right/0.28.1920.961@0.28.1920.961" timestamp="1600363787370" />
     <state x="449" y="143" key="SettingsEditor" timestamp="1600347507599">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
