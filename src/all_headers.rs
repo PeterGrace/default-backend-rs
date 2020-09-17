@@ -1,7 +1,7 @@
 use rocket::request::{FromRequest, Outcome, Request};
 use std::collections::HashMap;
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct AllHeaders(HashMap<String, String>);
 impl AllHeaders {
     pub(crate) fn get(&self, key: String) -> Option<&String> {
