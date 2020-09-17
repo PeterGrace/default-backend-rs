@@ -29,18 +29,20 @@
   </head>
   <body class="d-flex flex-column h-100">
     <header>
-  <!-- Fixed navbar -->
+  <!-- dbrs -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Fixed navbar</a>
+    <a class="navbar-brand" href="#">dbrs</a>
   </nav>
 </header>
 
 <!-- Begin page content -->
 <main role="main" class="flex-shrink-0">
   <div class="container">
-      <h1 class="mt-5">Oh no! {{status_code}}!</h1>
+      <h1 class="mt-5">Oh no! Error {{status_code}}!</h1>
+      <p> Your request was greeted with an error status code of {{status_code}}.  If you need more information about that status, please <a href="https://httpstatuses.com/{{status_code}}">Click here for more info on status {{status_code}}.</a></p>
+      <hr>
       <table>
-          <th><td>Key</td><td>Value</td></th>
+          <tr><th>Key</th><th>Value</th></tr>
 {{#each .}}
     <tr><td>{{@key}}</td><td>{{this}}</td></tr>
         {{/each}}
@@ -50,7 +52,7 @@
 
 <footer class="footer mt-auto py-3">
   <div class="container">
-      <span class="text-muted">Error page for you, on {{user_agent}}.</span>
+      <span class="text-muted">Dynamically rendered error page for {{status_code}}, on {{user_agent}}.</span>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
