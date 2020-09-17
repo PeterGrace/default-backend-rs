@@ -11,8 +11,9 @@ fi
 if [[ ! -d "/app/templates/dbrs-error-no-code.html.hbs" ]];
 then
     log "a default template was not detected in templates folder, reseeding defaults into container filesystem."
-    cp -r /app/default_templates /app/templates
-    cp -r /app/default_public /app/public
+    mkdir -p /app/templates /app/public
+    cp -rv /app/default_templates/*.hbs /app/templates
+    cp -rv /app/default_public/* /app/public
 fi
 
 export ROCKET_ENV=${app_env:-prod}
