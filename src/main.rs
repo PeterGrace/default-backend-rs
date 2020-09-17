@@ -7,6 +7,9 @@ mod metrics;
 extern crate serde;
 #[macro_use]
 extern crate rocket;
+#[macro_use]
+extern crate log;
+extern crate env_logger;
 use crate::all_headers::AllHeaders;
 use metrics::DEFAULT_BACKEND_APP_VER;
 use rocket::http::{Header, HeaderMap, Status};
@@ -50,7 +53,7 @@ fn get_error(file: String, headers: AllHeaders) -> Custom<Template> {
             status::Custom(s, t)
         }
         1001 => {
-            let t: Template = Template::render("dbrs-error-unwrap", &variables);
+            let t: Template = Template::render("dbrs-error-no-code", &variables);
             let s: Status = Status::new(500, "reason");
             status::Custom(s, t)
         }
@@ -60,8 +63,7 @@ fn get_error(file: String, headers: AllHeaders) -> Custom<Template> {
             status::Custom(s, t)
         }
         _ => {
-            let error_template = format!("{}", file);
-            let t: Template = Template::render(error_template, &variables);
+            let t: Template = Template::render("error", &variables);
             let s = Status::new(status_code, "reason");
             status::Custom(s, t)
         }
@@ -69,6 +71,8 @@ fn get_error(file: String, headers: AllHeaders) -> Custom<Template> {
 }
 
 fn main() {
+    std::env::set_var("RUST_LOG", "info,kube=info");
+    env_logger::init();
     let prometheus = PrometheusMetrics::new();
     prometheus
         .registry()
