@@ -5,6 +5,8 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x tini \
  && mkdir -p /app/templates /app/public 
 ADD /target/${app_env}/default-backend-rs /app/default-backend-rs
+ADD /templates /app/default_templates
+ADD /public /app/default_public
 ADD /docker/entrypoint.sh /app/entrypoint.sh
 ENTRYPOINT ["/tini", "--"]
 CMD ["/app/entrypoint.sh"]
