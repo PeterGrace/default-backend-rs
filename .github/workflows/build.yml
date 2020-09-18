@@ -35,5 +35,5 @@ jobs:
           build_args: "app_env=release"
           username: petergrace
           password: ${{ secrets.HUB_DOCKER_PAT }}
-          repository: PeterGrace/default-backend-rs
+          repository: petergrace/default-backend-rs
           tag_with_ref: true
