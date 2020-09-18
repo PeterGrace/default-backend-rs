@@ -33,7 +33,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           build_args: "app_env=release"
-          username: PeterGrace
+          username: petergrace
           password: ${{ secrets.HUB_DOCKER_PAT }}
           repository: PeterGrace/default-backend-rs
           tag_with_ref: true
