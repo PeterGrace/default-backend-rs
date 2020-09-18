@@ -30,7 +30,7 @@ jobs:
           toolchain: nightly
           args: --release
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v1
         with:
           build_args: "app_env=release"
           username: PeterGrace
