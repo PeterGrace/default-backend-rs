@@ -76,7 +76,10 @@ fn get_error(headers: AllHeaders) -> Custom<Template> {
 }
 
 fn main() {
-    std::env::set_var("RUST_LOG", "info,kube=info");
+    match std::env::var("RUST_LOG") {
+        Err(_) => std::env::set_var("RUST_LOG", "warn"),
+        Ok(_) => ()
+    }
     env_logger::init();
     let prometheus = PrometheusMetrics::new();
     prometheus

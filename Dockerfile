@@ -13,3 +13,4 @@ RUN chown -R 1000:1000 /app
 USER 1000
 CMD ["/app/entrypoint.sh"]
 EXPOSE 8000
+VOLUME ["/app/templates", "/app/public"]
