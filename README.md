@@ -7,6 +7,9 @@ There was an example in the ingress-nginx repository but it was written in Go, a
 I wanted to write a default-backend that supported a templating language and that also was able to emit metrics to
 prometheus.
 
+## Where to get it
+The latest image is always available on the docker hub, so `docker pull petergrace/default-backend-rs:latest` will get the latest version.
+
 ## How to deploy
 This backend can be deployed as a default-backend for ingress-nginx globally, or you can also deploy it multiple times
 for the purpose of having custom error pages per-ingress.  The container listens on port 8000 for traffic.
@@ -32,6 +35,8 @@ files do not exist, it will copy the default files into those paths.
 If you create volume mounts at those two paths, you can customize the error pages to your liking.  You could also build 
 a Docker image `FROM` this container to customize the default files for your usage; the files live in templates/ and 
 public/ in this repository. 
+
+The templates use the handlebars templating language, and the headers are passed into the template as the variable context.
 
 ## Special routes
 There are some special routes available:
