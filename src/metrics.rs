@@ -1,6 +1,5 @@
 use once_cell::sync::Lazy;
-use rocket::Route;
-use rocket_prometheus::prometheus::{opts, Encoder, GaugeVec, TextEncoder};
+use rocket_prometheus::prometheus::{opts, GaugeVec};
 
 pub(crate) static DEFAULT_BACKEND_APP_VER: Lazy<GaugeVec> = Lazy::new(|| {
     GaugeVec::new(
