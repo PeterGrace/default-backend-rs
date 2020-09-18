@@ -29,10 +29,12 @@ jobs:
           command: build
           toolchain: nightly
           args: --release
-      - name: Docker Build and Push
-        uses: VaultVulp/gp-docker-action@1.1.7
+      - name: Push to Docker Hub
+        uses: docker/build-push-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          image-name: default-backend-rs
-          image-tag: head
-          build-context: "--build-arg app_env=release ."
+          build-args:
+            - "app_env=release"
+          username: PeterGrace
+          password: ${{ secrets.HUB_DOCKER_PAT }}
+          repository: PeterGrace/default-backend-rs
+          tag_with_ref: true
