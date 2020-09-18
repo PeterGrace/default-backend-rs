@@ -25,19 +25,13 @@ use std::error::Error;
 
 static COMPRESSED_DEPENDENCY_LIST: &[u8] = auditable::inject_dependency_list!();
 
-#[get("/")]
-fn get_default() -> Template {
-    let variables = HashMap::new();
-    Template::render("unknown", &variables);
-}
-
 #[get("/health")]
 fn get_health() -> String {
     "{\"status\":\"ok\"}".to_string()
 }
 
-#[get("/<file>")]
-fn get_error(file: String, headers: AllHeaders) -> Custom<Template> {
+#[get("/")]
+fn get_error(headers: AllHeaders) -> Custom<Template> {
     let mut variables = HashMap::new();
     variables.insert("user_agent", headers.get(String::from("User-Agent")));
     variables.insert("status_code", headers.get(String::from("X-Code")));
@@ -59,13 +53,13 @@ fn get_error(file: String, headers: AllHeaders) -> Custom<Template> {
     }
     return match status_code {
         1000 => {
-            let t: Template = Template::render("dbrs-error-no-code", &variables);
-            let s: Status = Status::new(status_code, "reason");
+            let t: Template = Template::render("unknown", &headers);
+            let s: Status = Status::new(200, "reason");
             status::Custom(s, t)
         }
         1001 => {
-            let t: Template = Template::render("dbrs-error-no-code", &variables);
-            let s: Status = Status::new(500, "reason");
+            let t: Template = Template::render("unknown", &headers);
+            let s: Status = Status::new(200, "reason");
             status::Custom(s, t)
         }
         1002 => {
