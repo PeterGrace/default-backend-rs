@@ -11,7 +11,7 @@ fi
 log "updating any files that don't already exist in the volume store"
 mkdir -p /app/templates /app/public
 cp -nv /app/default_templates/*.hbs /app/templates
-cp -nv /app/default_public/* /app/public
+cp -rnv /app/default_public/* /app/public
 
 export ROCKET_ENV=${app_env:-prod}
 cd /app
