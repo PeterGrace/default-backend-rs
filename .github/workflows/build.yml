@@ -32,8 +32,7 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with:
-          build-args:
-            - "app_env=release"
+          build-args: "app_env=release"
           username: PeterGrace
           password: ${{ secrets.HUB_DOCKER_PAT }}
           repository: PeterGrace/default-backend-rs
