@@ -25,7 +25,7 @@ metadata:
     nginx.ingress.kubernetes.io/custom-http-errors: "404,418,500"
 ```
 In the above example annotations for the ingress, this would instruct your ingress object to change its default backend
-to be the my_deployed_dbrs service **IN THE SAME NAMESPACE AS THE INGRESS.**  The custom-http-errors would enable the
+to be the my_deployed_dbrs service **in the same namespace as the ingress.**  The custom-http-errors would enable the
 nginx-ingress improved error passthrough information as specified [in the nginx-ingress custom errors handler docs.](http://kubernetes.github.io/ingress-nginx/user-guide/custom-errors/)
 
 ## How to customize the error webpages
