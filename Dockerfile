@@ -9,5 +9,7 @@ ADD /templates /app/default_templates
 ADD /public /app/default_public
 ADD /docker/entrypoint.sh /app/entrypoint.sh
 ENTRYPOINT ["/tini", "--"]
+RUN chown -R 1000:1000 /app
+USER 1000
 CMD ["/app/entrypoint.sh"]
 EXPOSE 8000

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated />
   </component>
@@ -118,7 +121,7 @@
       <updated>1600283915960</updated>
       <workItem from="1600283917153" duration="469000" />
       <workItem from="1600284412133" duration="13576000" />
-      <workItem from="1600355030784" duration="2351000" />
+      <workItem from="1600355030784" duration="14506000" />
     </task>
     <servers />
   </component>
@@ -149,29 +152,70 @@
       <screen x="0" y="28" width="1920" height="961" />
     </state>
     <state x="743" y="266" width="426" height="482" key="FileChooserDialogImpl/0.28.1920.961@0.28.1920.961" timestamp="1600284131969" />
-    <state width="1872" height="248" key="GridCell.Tab.0.bottom" timestamp="1600363787370">
+    <state x="55" y="28" width="1802" height="959" key="FileDocumentManager.FileCacheConflict" timestamp="1600364423460">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
-    <state width="1872" height="248" key="GridCell.Tab.0.bottom/0.28.1920.961@0.28.1920.961" timestamp="1600363787370" />
-    <state width="1872" height="248" key="GridCell.Tab.0.center" timestamp="1600363787369">
+    <state x="55" y="28" width="1802" height="959" key="FileDocumentManager.FileCacheConflict/0.28.1920.961@0.28.1920.961" timestamp="1600364423460" />
+    <state width="1872" height="248" key="GridCell.Tab.0.bottom" timestamp="1600386501003">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
-    <state width="1872" height="248" key="GridCell.Tab.0.center/0.28.1920.961@0.28.1920.961" timestamp="1600363787369" />
-    <state width="1872" height="248" key="GridCell.Tab.0.left" timestamp="1600363787368">
+    <state width="1872" height="248" key="GridCell.Tab.0.bottom/0.28.1920.961@0.28.1920.961" timestamp="1600386501003" />
+    <state width="1872" height="248" key="GridCell.Tab.0.center" timestamp="1600386501002">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
-    <state width="1872" height="248" key="GridCell.Tab.0.left/0.28.1920.961@0.28.1920.961" timestamp="1600363787368" />
-    <state width="1872" height="248" key="GridCell.Tab.0.right" timestamp="1600363787370">
+    <state width="1872" height="248" key="GridCell.Tab.0.center/0.28.1920.961@0.28.1920.961" timestamp="1600386501002" />
+    <state width="1872" height="248" key="GridCell.Tab.0.left" timestamp="1600386501002">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
-    <state width="1872" height="248" key="GridCell.Tab.0.right/0.28.1920.961@0.28.1920.961" timestamp="1600363787370" />
+    <state width="1872" height="248" key="GridCell.Tab.0.left/0.28.1920.961@0.28.1920.961" timestamp="1600386501002" />
+    <state width="1872" height="248" key="GridCell.Tab.0.right" timestamp="1600386501003">
+      <screen x="0" y="28" width="1920" height="961" />
+    </state>
+    <state width="1872" height="248" key="GridCell.Tab.0.right/0.28.1920.961@0.28.1920.961" timestamp="1600386501003" />
+    <state width="1872" height="307" key="GridCell.Tab.1.bottom" timestamp="1600384168896">
+      <screen x="0" y="28" width="1920" height="961" />
+    </state>
+    <state width="1872" height="307" key="GridCell.Tab.1.bottom/0.28.1920.961@0.28.1920.961" timestamp="1600384168896" />
+    <state width="1872" height="307" key="GridCell.Tab.1.center" timestamp="1600384168895">
+      <screen x="0" y="28" width="1920" height="961" />
+    </state>
+    <state width="1872" height="307" key="GridCell.Tab.1.center/0.28.1920.961@0.28.1920.961" timestamp="1600384168895" />
+    <state width="1872" height="307" key="GridCell.Tab.1.left" timestamp="1600384168895">
+      <screen x="0" y="28" width="1920" height="961" />
+    </state>
+    <state width="1872" height="307" key="GridCell.Tab.1.left/0.28.1920.961@0.28.1920.961" timestamp="1600384168895" />
+    <state width="1872" height="307" key="GridCell.Tab.1.right" timestamp="1600384168895">
+      <screen x="0" y="28" width="1920" height="961" />
+    </state>
+    <state width="1872" height="307" key="GridCell.Tab.1.right/0.28.1920.961@0.28.1920.961" timestamp="1600384168895" />
     <state x="449" y="143" key="SettingsEditor" timestamp="1600347507599">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
     <state x="449" y="143" key="SettingsEditor/0.28.1920.961@0.28.1920.961" timestamp="1600347507599" />
-    <state x="623" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1600355049463">
+    <state x="650" y="73" width="620" height="870" key="find.popup" timestamp="1600374203217">
       <screen x="0" y="28" width="1920" height="961" />
     </state>
-    <state x="623" y="237" width="672" height="678" key="search.everywhere.popup/0.28.1920.961@0.28.1920.961" timestamp="1600355049463" />
+    <state x="650" y="73" width="620" height="870" key="find.popup/0.28.1920.961@0.28.1920.961" timestamp="1600374203217" />
+    <state x="623" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1600366398970">
+      <screen x="0" y="28" width="1920" height="961" />
+    </state>
+    <state x="623" y="237" width="672" height="678" key="search.everywhere.popup/0.28.1920.961@0.28.1920.961" timestamp="1600366398970" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.rs</url>
+          <line>71</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CargoCommandRunConfiguration">
+        <watch expression="e" language="Rust" />
+        <watch expression="status_code" language="Rust" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

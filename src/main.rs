@@ -25,6 +25,17 @@ use std::error::Error;
 
 static COMPRESSED_DEPENDENCY_LIST: &[u8] = auditable::inject_dependency_list!();
 
+#[get("/")]
+fn get_default() -> Template {
+    let variables = HashMap::new();
+    Template::render("unknown", &variables);
+}
+
+#[get("/health")]
+fn get_health() -> String {
+    "{\"status\":\"ok\"}".to_string()
+}
+
 #[get("/<file>")]
 fn get_error(file: String, headers: AllHeaders) -> Custom<Template> {
     let mut variables = HashMap::new();
@@ -87,6 +98,6 @@ fn main() {
         .attach(prometheus.clone())
         .mount("/metrics", prometheus)
         .mount("/public", StaticFiles::from("public"))
-        .mount("/", routes![get_error])
+        .mount("/", routes![get_error, get_health])
         .launch();
 }
