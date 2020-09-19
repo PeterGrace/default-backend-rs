@@ -1,11 +1,7 @@
 # default-backend-rs
 
 ## Why
-I decided to write default-backend-rs because I wanted to create a themed error page for my ingress controllers.
-There was an example in the ingress-nginx repository but it was written in Go, and I'm not as familiar with Go.
-
-I wanted to write a default-backend that supported a templating language and that also was able to emit metrics to
-prometheus.
+I wanted an implementation of a default backend for the nginx ingress-controller that surfaced the headers from the request into the document space, so that I could customize the error page based on that info.  The result is this project, which enables you to create error html templates with Handlebars.
 
 ## Where to get it
 The latest image is always available on the docker hub, so `docker pull petergrace/default-backend-rs:latest` will get the latest version.
